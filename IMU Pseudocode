@@ -1,0 +1,12 @@
+
+IMU via I2C
+
+Initialise I2C
+  SCL (PB_10)
+  SDA (PB_3) (Default address is 0x29)
+  Interrupt (PB_4)
+ 
+Main Function:
+  Write to SDA requesting telemetry (See adafruit BNO055 datasheet)
+  package telemetry as per requirements including timestamp
+Return Telemetry
