@@ -1,0 +1,11 @@
+Tom Piercy
+
+edge detection
+
+get image (same as blob)
+  for each pixel (except edge pixels)
+    record pixel intensity (brightness)
+      If pixel intensity >> pixles around first pixel
+        mark as edge
+  consolidate edges
+  publish
