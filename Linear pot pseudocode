@@ -1,0 +1,42 @@
+Create Varible for each Pot
+float Sus1
+float Sus2
+float Sus3
+
+Create varible for average pot value
+
+AvgSus
+
+Create set point for potentiometers
+L = set point
+
+average the data from the pots
+Based off the average result extend or contract with regards to the set point
+
+If max/min limits have been reached do not extend or contract respectively
+
+
+void suspension (void)
+{
+assign pin values to suspensions
+  Sus1 = PA_5;  
+  Sus2 = PA_6;
+  Sus3 = PA_7;
+  
+average the values from the potentiometer
+  AvgSus = Sus1 + Sus2 + Sus3 / 3;
+  
+  if(AvgSus > (L * 1.05))
+    {
+     extend the servo motor
+     
+     
+    }
+  
+  else if(AvgSus < (L * 0.95))
+    {
+     Contract the servo motor
+     
+     
+    }
+}
