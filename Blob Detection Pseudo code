@@ -1,0 +1,19 @@
+Using cmvision node
+
+setup cmvision node topic
+  rosrun cmvision colorgui image:=<image topic>
+  
+Determine Blob colour to detect
+  (R,G,B) values
+  
+Determine blob size threshold
+  (min x,y,u,v)
+
+On GUI:
+  subscribe colorgui to image topic
+  
+cmvision:
+  subscribes to image topic
+  publishes blobs topic
+  
+paths for the image, colours, blob sizes
