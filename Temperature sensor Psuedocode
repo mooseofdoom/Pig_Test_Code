@@ -1,0 +1,14 @@
+Temperature sensor code
+
+Benjamin Purkiss
+Version 0.1
+
+Setup analogue pins
+
+read in voltages from pins one at a time and allocate them to temperature variables.
+
+Temperature1, Temperature2, Temperature3
+
+Set them through voltage divider calculation from set scale (approximately 0.1mv per Kelvin which translates to that per degree celsius).
+
+once temperatures have been calculated send them outwards from the function.
